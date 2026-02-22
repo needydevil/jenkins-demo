@@ -10,6 +10,8 @@ pipeline {
     stage('Build') {
       steps {
         echo "Building ${APP_NAME} version ${VERSION}"
+        echo "Build number: ${env.BUILD_NUMBER}"
+        echo "Job name: ${env.JOB_NAME}"
       }
     }
 
