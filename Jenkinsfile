@@ -4,7 +4,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        echo 'New version build at ${new Date()}'
+        echo "New version build at ${new Date()}"
       }
     }
 
