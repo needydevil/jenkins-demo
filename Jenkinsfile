@@ -4,7 +4,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        echo 'Building from Jenkinsfile...'
+        echo 'New version build at ${new Date()}'
       }
     }
 
