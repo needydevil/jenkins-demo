@@ -1,16 +1,21 @@
 pipeline {
   agent any
+
+  environment {
+    APP_NAME = "MyApp"
+    VERSION = "1.0.0"
+  }
   
   stages {
     stage('Build') {
       steps {
-        echo "New version build at ${new Date()}"
+        echo "Building ${APP_NAME} version ${VERSION}"
       }
     }
 
     stage('Test') {
       steps {
-        echo 'Running tests from Jenkinsfile...'
+        echo "Running tests for ${APP_NAME}"
       }
     }
   }
